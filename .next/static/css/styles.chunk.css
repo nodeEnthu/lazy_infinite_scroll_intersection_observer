@@ -1,0 +1,128 @@
+.row {
+  display: flex;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 20px; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 20px; }
+  .row .col-1-2 {
+    width: calc((100% - 20px) / 2); }
+  .row .col-1-3 {
+    width: calc((100% -  2 * 20px) / 3); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: sans-serif; }
+
+.row img {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background: #fafafa; }
+  @media screen and (max-width: 740px) {
+    .header {
+      justify-content: flex-start; } }
+  @media screen and (max-width: 740px) {
+    .header img {
+      margin-left: 4rem; } }
+
+.main-nav {
+  list-style: none; }
+  @media screen and (max-width: 740px) {
+    .main-nav {
+      position: absolute;
+      background: #fafafa;
+      top: 3rem;
+      left: -100%;
+      height: 100%;
+      transition: .25s ease-in-out; } }
+  .main-nav li {
+    display: inline-block;
+    margin-right: 2rem; }
+    @media screen and (max-width: 740px) {
+      .main-nav li {
+        display: block;
+        padding: 1rem; } }
+
+.main-nav.nav-open {
+  left: 0; }
+
+.logo-image {
+  display: flex;
+  align-items: center;
+  height: 3rem; }
+  .logo-image img {
+    height: 100%; }
+  .logo-image .company-name {
+    margin-left: 1rem; }
+
+.nav-hamburger {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+  @media screen and (max-width: 740px) {
+    .nav-hamburger {
+      display: block;
+      margin-left: 2rem; } }
+  .nav-hamburger span {
+    display: block;
+    position: absolute;
+    height: 0.1rem;
+    width: 100%;
+    background: black;
+    left: 0;
+    transition: .25s ease-in-out; }
+  .nav-hamburger span:nth-child(1) {
+    top: 15%;
+    transform-origin: left center; }
+  .nav-hamburger span:nth-child(2) {
+    top: 45%;
+    transform-origin: left center; }
+  .nav-hamburger span:nth-child(3) {
+    top: 75%;
+    transform-origin: left center; }
+
+.nav-hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10%;
+  left: 15%; }
+
+.nav-hamburger.open span:nth-child(2) {
+  width: 0;
+  left: -100%;
+  opacity: 0; }
+
+.nav-hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  left: 15%;
+  top: 80%; }
+
+.image-no-show-wrapper {
+  width: 100%;
+  height: 200px;
+  background: #EEE; }
+
+.image {
+  width: 100%;
+  display: block; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

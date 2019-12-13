@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/9.11.1/bin/node',
+1 verbose cli   '/Users/gautammehra/.npm-packages/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@3.8.8
+3 info using node@v11.4.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle walint@1.0.0~prestart: walint@1.0.0
+6 silly lifecycle walint@1.0.0~prestart: no script for prestart, continuing
+7 info lifecycle walint@1.0.0~start: walint@1.0.0
+8 verbose lifecycle walint@1.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle walint@1.0.0~start: PATH: /Users/gautammehra/.npm-packages/lib/node_modules/npm/bin/node-gyp-bin:/Users/gautammehra/dev/Lazy_Intersection_Observer/node_modules/.bin:/usr/local/Cellar/node/9.11.1/bin:/Users/gautammehra/anaconda2/bin:/Users/gautammehra/.npm-packages/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+10 verbose lifecycle walint@1.0.0~start: CWD: /Users/gautammehra/dev/Lazy_Intersection_Observer
+11 silly lifecycle walint@1.0.0~start: Args: [ '-c', 'next start' ]
+12 silly lifecycle walint@1.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle walint@1.0.0~start: Failed to exec start script
+14 verbose stack Error: walint@1.0.0 start: `next start`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/gautammehra/.npm-packages/lib/node_modules/npm/lib/utils/lifecycle.js:244:16)
+14 verbose stack     at EventEmitter.emit (events.js:189:13)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/gautammehra/.npm-packages/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at ChildProcess.emit (events.js:189:13)
+14 verbose stack     at maybeClose (internal/child_process.js:978:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:265:5)
+15 verbose pkgid walint@1.0.0
+16 verbose cwd /Users/gautammehra/dev/Lazy_Intersection_Observer
+17 error Darwin 18.7.0
+18 error argv "/usr/local/Cellar/node/9.11.1/bin/node" "/Users/gautammehra/.npm-packages/bin/npm" "start"
+19 error node v11.4.0
+20 error npm  v3.8.8
+21 error code ELIFECYCLE
+22 error walint@1.0.0 start: `next start`
+22 error Exit status 1
+23 error Failed at the walint@1.0.0 start script 'next start'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the walint package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     next start
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs walint
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls walint
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

@@ -1,0 +1,29 @@
+$horizontal-gutter: 20px;
+
+$vertical-gutter: 20px;
+
+.row {
+  display: flex;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $vertical-gutter;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+
+    &:not(:last-child) {
+      margin-right: $horizontal-gutter;
+    }
+  }
+
+  .col-1-2 {
+    width: calc((100% - #{$horizontal-gutter}) / 2);
+  }
+  
+  .col-1-3 {
+    width: calc((100% -  2 * #{$horizontal-gutter}) / 3);
+  }
+}

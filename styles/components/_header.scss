@@ -1,0 +1,62 @@
+$base-header:  #fafafa;
+$header-height: 3rem;
+
+.header {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background: $base-header;
+
+  @media screen and (max-width: 740px) {
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 740px) {
+    img {
+      margin-left: 4rem;
+    }
+  }
+}
+
+.main-nav {
+  list-style: none;
+
+  @media screen and (max-width: 740px) {
+    position: absolute;
+    background: $base-header;
+    top: $header-height;
+    left: -100%;
+    height: 100%;
+    transition: .25s ease-in-out;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 2rem;
+
+    @media screen and (max-width: 740px) {
+      display: block;
+      padding: 1rem;
+    }
+  }
+}
+
+.main-nav.nav-open {
+  left: 0;
+}
+
+.logo-image {
+  display: flex;
+  align-items: center;
+
+  height: $header-height;
+
+  img {
+    height: 100%;
+  }
+
+  .company-name {
+    margin-left: 1rem;
+  }
+}
